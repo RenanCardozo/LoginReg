@@ -1,0 +1,17 @@
+@model LoginUser
+<div class="m-5">
+    <h1>Log In</h1>
+    <form asp-action="Login" asp-controller="Home">
+        <div>
+        <label asp-for="LEmail">Email</label>
+        <input asp-for="LEmail" class="form-control" />
+        <span asp-validation-for="LEmail"></span>
+        </div>
+        <div>
+            <label asp-for="LPassword">Password</label>
+            <input asp-for="LPassword" class="form-control" />
+            <span asp-validation-for="LPassword"></span>
+        </div>
+        <button type="submit" class="btn btn-primary m-3">Login</button>
+    </form>
+    </div>

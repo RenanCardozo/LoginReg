@@ -1,0 +1,7 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="d-flex">
+@await Html.PartialAsync("_UserRegForm")
+@await Html.PartialAsync("_UserLoginForm")
+</div>
